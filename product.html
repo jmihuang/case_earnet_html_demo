@@ -100,21 +100,54 @@
         </div>
       </div>
     </header>
-    <div class="header-bg" id="section-header">
+    <section class="header-bg" id="section-header">
       <div class="d-flex flex-column align-items-center py-5 py-lg-7">
         <h2 class="fs-2 text-white">虛擬機器(VM)</h2>
         <h4 class="fs-4 text-white">雲端運算</h4>
       </div>
-    </div>
-    <div class="container-fluid"> 
-      <div class="product-page container p-4">
+    </section>
+    <section class="product-page container-fluid"> 
+      <div class="container p-4">
         <div class="row">
           <div class="col-12 col-lg-2 bg-gray-300 p-3">
             <ul class="side-nav ms-auto list-unstyled d-flex flex-column gap-3 mb-0">
-              <li class="active"><a class="nav-link active" href="#">虛擬機器(VM)</a></li>
-              <li><a class="nav-link" href="#">存儲服務(Storage)</a></li>
-              <li><a class="nav-link" href="#">大數據</a></li>
-              <li><a class="nav-link" href="#">資料分析</a></li>
+              <!-- 雲端運算-->
+              <li class="has-active"><a class="nav-link fw-bold side-nav-toggle" href="#"><span>雲端運算</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li class="active"><a class="nav-link active" href="#">虛擬機器(VM)</a></li>
+                  <li><a class="nav-link" href="#">存儲服務(Storage)</a></li>
+                  <li><a class="nav-link" href="#">大數據</a></li>
+                  <li><a class="nav-link" href="#">資料分析</a></li>
+                </ul>
+              </li>
+              <!-- CDN-->
+              <li><a class="nav-link fw-bold side-nav-toggle" href="#"><span>CDN</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li><a class="nav-link" href="#">網站加速(CDN)</a></li>
+                  <li><a class="nav-link" href="#">影片加速(VOD)</a></li>
+                  <li><a class="nav-link" href="#">直播加速(Live)</a></li>
+                </ul>
+              </li>
+              <!-- VPN-->
+              <li><a class="nav-link fw-bold side-nav-toggle" href="#"><span>VPN</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li><a class="nav-link" href="#">MPLS VPN</a></li>
+                  <li><a class="nav-link" href="#">SD-WAN</a></li>
+                  <li><a class="nav-link" href="#">Co-Location</a></li>
+                  <li><a class="nav-link" href="#">Internet BGP</a></li>
+                  <li><a class="nav-link" href="#">Internet Plus</a></li>
+                  <li><a class="nav-link" href="#">VPN Plus</a></li>
+                </ul>
+              </li>
+              <!-- 資安防護-->
+              <li><a class="nav-link fw-bold side-nav-toggle" href="#"><span>資安防護</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li><a class="nav-link" href="#">WAF</a></li>
+                  <li><a class="nav-link" href="#">Anti-DDoS</a></li>
+                  <li><a class="nav-link" href="#">防火牆(F/W)</a></li>
+                  <li><a class="nav-link" href="#">ZeroTrust零信任安全性</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="col-12 col-lg-10 px-0 px-md-3 px-lg-5"> 
@@ -241,7 +274,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer-section text-light py-3 py-lg-3">
       <div class="container">
         <div class="row d-flex align-items-center py-1 py-lg-5">

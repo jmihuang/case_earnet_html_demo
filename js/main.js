@@ -112,3 +112,45 @@ function animateBoxes(section) {
 animateBoxes("#section-1");
 animateBoxes("#section-2");
 animateBoxes("#section-3");
+
+// Side navigation toggle for mobile
+document.addEventListener("DOMContentLoaded", function () {
+  var sideNavToggles = document.querySelectorAll(".side-nav-toggle");
+  sideNavToggles.forEach(function (toggle) {
+    toggle.addEventListener("click", function (e) {
+      // 只在手機版才阻止默認行為和切換展開狀態
+      if (window.innerWidth < 992) {
+        e.preventDefault();
+        var parentLi = this.closest("li");
+        if (parentLi) {
+          // 先收合其他所有展開的菜單項（包括有 has-active 的）
+          var allMenuItems = document.querySelectorAll(".side-nav > li");
+          allMenuItems.forEach(function (item) {
+            if (item !== parentLi) {
+              // 移除 expanded 類
+              item.classList.remove("expanded");
+              // 如果有 has-active 類，也移除 expanded 類
+              // 但保留 has-active 類用於 CSS 樣式識別（如 active 子項的背景色等）
+              // 由於 CSS 中 has-active 和 expanded 是分開的，我們需要確保 has-active 項目也收合
+              // 所以我們添加一個臨時類來覆蓋，或者直接移除 expanded
+            }
+          });
+
+          // 移除 has-active 類，改用 expanded 類來控制展開/收合
+          parentLi.classList.remove("has-active");
+          // 切換當前點擊的菜單項
+          parentLi.classList.toggle("expanded");
+        }
+      }
+    });
+  });
+
+  // 初始狀態：有 active 的項目應該展開（手機版）
+  var hasActiveItems = document.querySelectorAll(".side-nav li.has-active");
+  hasActiveItems.forEach(function (item) {
+    if (window.innerWidth < 992) {
+      // 添加 expanded 類，並保留 has-active 類用於初始識別
+      item.classList.add("expanded");
+    }
+  });
+});

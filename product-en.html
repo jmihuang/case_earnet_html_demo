@@ -10,13 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=REM:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link rel="preload" href="images/pins-map.png" as="image" type="image/png">
     <!-- Add the slick-theme.css if you want default styling-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <!-- Add the slick-theme.css if you want default styling-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.min.css">
+    <link rel="stylesheet" href="style/style-en.min.css">
   </head>
   <body>
     <!--preloader-->
@@ -100,21 +99,54 @@
         </div>
       </div>
     </header>
-    <div class="header-bg" id="section-header">
+    <section class="header-bg" id="section-header">
       <div class="d-flex flex-column align-items-center py-5 py-lg-7">
         <h2 class="fs-2 text-white">Virtual Machine (VM)</h2>
         <h4 class="fs-4 text-white">Cloud Computing</h4>
       </div>
-    </div>
-    <div class="container-fluid"> 
-      <div class="product-page container p-4">
+    </section>
+    <section class="product-page container-fluid"> 
+      <div class="container p-4">
         <div class="row">
           <div class="col-12 col-lg-2 bg-gray-300 p-3">
             <ul class="side-nav ms-auto list-unstyled d-flex flex-column gap-3 mb-0">
-              <li class="active"><a class="nav-link active" href="#">Virtual Machine (VM)</a></li>
-              <li><a class="nav-link" href="#">Storage Service</a></li>
-              <li><a class="nav-link" href="#">Big Data</a></li>
-              <li><a class="nav-link" href="#">Data Analytics</a></li>
+              <!-- Cloud Computing-->
+              <li class="has-active"><a class="nav-link fw-bold side-nav-toggle" href="#"><span>Cloud Computing</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li class="active"><a class="nav-link active" href="#">Virtual Machine (VM)</a></li>
+                  <li><a class="nav-link" href="#">Storage Service</a></li>
+                  <li><a class="nav-link" href="#">Big Data</a></li>
+                  <li><a class="nav-link" href="#">Data Analytics</a></li>
+                </ul>
+              </li>
+              <!-- CDN-->
+              <li><a class="nav-link fw-bold side-nav-toggle" href="#"><span>CDN</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li><a class="nav-link" href="#">Website Acceleration (CDN)</a></li>
+                  <li><a class="nav-link" href="#">Video Acceleration (VOD)</a></li>
+                  <li><a class="nav-link" href="#">Live Streaming Acceleration (Live)</a></li>
+                </ul>
+              </li>
+              <!-- VPN-->
+              <li><a class="nav-link fw-bold side-nav-toggle" href="#"><span>VPN</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li><a class="nav-link" href="#">MPLS VPN</a></li>
+                  <li><a class="nav-link" href="#">SD-WAN</a></li>
+                  <li><a class="nav-link" href="#">Co-Location</a></li>
+                  <li><a class="nav-link" href="#">Internet BGP</a></li>
+                  <li><a class="nav-link" href="#">Internet Plus</a></li>
+                  <li><a class="nav-link" href="#">VPN Plus</a></li>
+                </ul>
+              </li>
+              <!-- Cybersecurity-->
+              <li><a class="nav-link fw-bold side-nav-toggle" href="#"><span>Cybersecurity</span><i class="fas fa-chevron-down ms-2"></i></a>
+                <ul class="list-unstyled ps-3 mt-2 mb-0">
+                  <li><a class="nav-link" href="#">WAF</a></li>
+                  <li><a class="nav-link" href="#">Anti-DDoS</a></li>
+                  <li><a class="nav-link" href="#">Firewall (F/W)</a></li>
+                  <li><a class="nav-link" href="#">Zero Trust Security</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="col-12 col-lg-10 px-0 px-md-3 px-lg-5"> 
@@ -207,7 +239,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer-section text-light py-3 py-lg-3">
       <div class="container">
         <div class="row d-flex align-items-center py-1 py-lg-5">
